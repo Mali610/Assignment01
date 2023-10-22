@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+  <head>
+    <title>The Laptop Mart</title>
+
+    <style>
+            *{
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                font-family: sans-serif;
+            }
+
+            #phones{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #EDEDED;
+            }
+
+            #cart > img {
+                width: 100px;
+            }
+
+            .phone{
+                display: flex;
+                background-color: #FFFFFF;
+                width: 15%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 5px;
+                margin: 10px;
+                }
+            
+            .phone > img{
+                width: 12vw;
+            }
+
+
+            #cart{
+                background-color: #000;
+                height: 37vh;
+            }
+
+            #cart-title{
+                color: white;
+                text-align: center;
+                padding: 10px;
+                
+            }
+
+            #cart-icon{
+                margin: 20px;
+                width: 100px;
+            }
+
+            #list{
+                margin: 30px;
+            }
+
+            #laptops{
+              display: flex;
+              background-color: #EDEDED;
+              justify-content: center;
+            }
+
+            .laptop{
+              width: 17vw;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              background-color: #FFFFFF;
+              padding: 1rem;
+              margin: 1rem;
+              text-align: center;
+            }
+
+            .laptop > img{
+              width:  15vw;
+            }
+
+            #header-title{
+                text-align: center;
+                background-color: #252539;
+                color: white;
+                padding: 10px;
+            }
+
+            .laptop > button{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background-color: #252539;
+                border: none;
+                color: #FFFFFF;
+                padding: 10px;
+                cursor: pointer;
+                bottom: 0px;
+                border-radius: 5px;
+            }
+
+            #list > li {
+              color: #FFFFFF;
+            }
+
+            #cart-container{
+                display: flex;
+            }
+
+            #cart-icon{
+              color: #FFFFFF;
+            }
+
+            #cart-close-button{
+                width: 1.5rem; 
+                padding-left: 10px; 
+            }
+
+
+            
+
+
+
+
+            
+
+    </style>
+  </head>
+  <body>
+    <h1 id = "header-title">Laptops</h1>
+    <div id = "laptops">
+        <div class = "laptop">
+          <img src = "media/laptop-2.jpg">
+          <h3>MSI Cyborg 15 A12VE Gaming</h3>
+          <button>ADD TO CART</button>
+        </div>
+
+        <div class = "laptop">
+          <img src="media/laptop-3.jpg">
+          <h3>MSI Cyborg 15 A12UCX Gaming </h3>
+          <button>ADD TO CART</button>
+        </div>
+
+        <div class = "laptop">
+          <img src="media/laptop-4.jpg">
+          <h3>MSI Modern 14 C12M</h3>
+          <button>ADD TO CART</button>
+        </div>
+
+        <div class = "laptop">
+          <img src="media/laptop-5.jpg">
+          <h3>MSI Bravo 15 – B5DD Ryzen 5</h3>
+          <button>ADD TO CART</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div id = "cart">
+        <h1 id = "cart-title">Cart</h1>
+        <div id="cart-container">
+          <img id = "cart-icon" src="media/cart-icon.png">
+          <div>
+            <ol id = "list">
+                <li><strong>MSI Cyborg 15 A12VE Gaming</strong><img src = "media/close-button.png" id="cart-close-button"/></li>
+                <li><strong>MSI Cyborg 15 A12UCX Gaming</strong><img src = "media/close-button.png" id="cart-close-button"/></li>
+                <li><strong>MSI Modern 14 C12M</strong><img src = "media/close-button.png" id="cart-close-button"/></li>
+            </ol>
+          </div>
+        </div>
+    </div>
+
+  </body>
+</html>
